@@ -11,6 +11,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
+import Auth from "./pages/auth";
 
 export default class App extends Component {
   render() {
@@ -25,6 +26,7 @@ export default class App extends Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/contact" component={Contact} />
+              <Route exact path="/auth" component={Auth} />
             </Switch>
           </Router>
         </div>

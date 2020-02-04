@@ -1,10 +1,10 @@
 import React from "react";
-import HomepageContainer from "../homepage/homepage-container";
+import Login from "../auth/login";
 
 export default function() {
   return (
     <div>
-      <HomepageContainer />
+      <Login />
     </div>
   );
 }
