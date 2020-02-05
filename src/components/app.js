@@ -5,32 +5,37 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-import NavigationContainer from "./navigation/navigation-container";
+import Layout from "./layout";
+import NavigationBar from "./navigation/navigation-bar";
+import Jumbotron from "./jumbotron";
+// import Footer from "./navigation/footer";
 
 import Home from "./pages/home";
-import About from "./pages/about";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Auth from "./pages/auth";
+import NoMatch from "./pages/no-match";
 
 export default class App extends Component {
   render() {
     return (
-      <div className="app">
-        <div className="container">
+      <React.Fragment>
+        <NavigationBar />
+        <Jumbotron />
+        <Layout>
           <Router>
-            <NavigationContainer />
-
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/auth" component={Auth} />
+              <Route component={NoMatch} />
             </Switch>
+
+            {/* <Footer /> */}
           </Router>
-        </div>
-      </div>
+        </Layout>
+      </React.Fragment>
     );
   }
 }

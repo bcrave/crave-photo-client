@@ -3,7 +3,7 @@ import { withRouter } from "react-router";
 import { NavLink } from "react-router-dom";
 // import Logo from "../../../static/assets/images/logo.png";
 
-const NavigationContainer = (props) => {
+const Footer = (props) => {
   return (
     <div className="nav-wrapper">
       <div className="left-column">
@@ -44,4 +44,4 @@ const NavigationContainer = (props) => {
   );
 };
 
-export default NavigationContainer;
+export default Footer;
