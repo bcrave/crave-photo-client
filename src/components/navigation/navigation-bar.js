@@ -29,7 +29,7 @@ const Styles = styled.div`
 const NavigationBar = (props) => {
   return (
     <Styles>
-      <Navbar expand="lg">
+      <Navbar expand="lg" fixed="top">
         <Navbar.Brand href="/">Crave Photography</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

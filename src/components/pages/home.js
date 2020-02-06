@@ -1,10 +1,11 @@
 import React from "react";
-import HomepageContainer from "../homepage/homepage-container";
+import HomepageCards from "../homepage/homepage-cards";
+// import HomepageContainer from "../homepage/homepage-container";
 
 export default function() {
   return (
     <div>
-      <HomepageContainer />
+      <HomepageCards />
     </div>
   );
 }

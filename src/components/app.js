@@ -8,6 +8,7 @@ import {
 import Layout from "./layout";
 import NavigationBar from "./navigation/navigation-bar";
 import Jumbotron from "./jumbotron";
+import HomepageCards from "./homepage/homepage-cards";
 // import Footer from "./navigation/footer";
 
 import Home from "./pages/home";
@@ -31,8 +32,6 @@ export default class App extends Component {
               <Route exact path="/auth" component={Auth} />
               <Route component={NoMatch} />
             </Switch>
-
-            {/* <Footer /> */}
           </Router>
         </Layout>
       </React.Fragment>

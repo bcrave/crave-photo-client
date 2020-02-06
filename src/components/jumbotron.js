@@ -12,6 +12,7 @@ const Styles = styled.div`
     height: 300px;
     position: relative;
     z-index: -2;
+    margin-top: 58px;
   }
 
   .overlay {
