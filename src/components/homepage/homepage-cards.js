@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Container, Nav, Image } from "react-bootstrap";
 import styled from "styled-components";
 import seniorPhoto from "../../../static/assets/images/homepage-photos/senior_photo.jpg";
+import sports from "../../../static/assets/images/homepage-photos/sports.jpg";
 
 const Styles = styled.div`
   .card-wrapper {
@@ -149,7 +150,7 @@ const HomepageCards = () => {
             <div
               className="img-background"
               style={{
-                backgroundImage: `url(${seniorPhoto})`
+                backgroundImage: `url(${sports})`
               }}
             ></div>
           </div>
