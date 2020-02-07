@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import HomepagePhoto from "./homepage-photo";
+import BlogPost from "../blog/blog-post";
 
-export default class HomepageContainer extends Component {
+export default class BlogContainer extends Component {
   constructor() {
     super();
 
@@ -14,9 +14,9 @@ export default class HomepageContainer extends Component {
     };
   }
 
-  getHomepagePhotos() {
+  getBlogPosts() {
     axios
-      .get("http://localhost:4000/photos")
+      .get("http://localhost:4000/posts")
       .then((response) => {
         this.setState({
           data: response.data
@@ -27,14 +27,14 @@ export default class HomepageContainer extends Component {
       });
   }
 
-  homepagePhotos() {
-    return this.state.data.map((photo) => {
-      return <HomepagePhoto key={photo._id} photo={photo} />;
+  blogPosts() {
+    return this.state.data.map((post) => {
+      return <BlogPost key={post._id} post={post} />;
     });
   }
 
   componentDidMount() {
-    this.getHomepagePhotos();
+    this.getBlogPosts();
   }
 
   render() {
@@ -44,8 +44,8 @@ export default class HomepageContainer extends Component {
     }
 
     return (
-      <div className="homepage-wrapper">
-        <div className="homepage-photos-wrapper">{this.homepagePhotos()}</div>
+      <div className="blog-wrapper">
+        <div className="blog-posts-wrapper">{this.blogPosts()}</div>
       </div>
     );
   }
