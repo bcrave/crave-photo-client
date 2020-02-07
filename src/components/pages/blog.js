@@ -16,7 +16,7 @@ export default class BlogContainer extends Component {
 
   getBlogEntries() {
     axios
-      .get("http://localhost:4000/blog-entries")
+      .get("https://bac-bottega-capstone-api.herokuapp.com/blog-entries")
       .then((response) => {
         this.setState({
           data: response.data
