@@ -8,7 +8,7 @@ export default function() {
         <h3>Phone</h3>
         <p>6087519158</p>
         <h3>Address</h3>
-        <p>Ur moms house</p>
+        <p>Beloit, WI</p>
       </div>
     </div>
   );
